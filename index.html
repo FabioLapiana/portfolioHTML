@@ -16,44 +16,7 @@
         <title>Fabio's Portfolio Website</title>
     </head>
     <body>
-        <script>
-        "use strict";
-
-        var language = window.navigator.language || window.navigator.userLanguage;
-
-        if (language.startsWith("it")) {
-            location.href = "it/index.html";
-        } else if (language.startsWith("en")) {
-            location.href = "en/index.html";
-        } else {
-            // Mostra un messaggio nel caso la lingua non sia rilevabile
-            var messageContainer = document.createElement("div");
-            messageContainer.setAttribute("align", "center");
-            
-            var messageItalian = document.createTextNode("Questo sito è disponibile in italiano ed in inglese!");
-            var messageEnglish = document.createTextNode("This site is available in Italian and in English!");
-            var br = document.createElement("br");
-
-            var linkItalian = document.createElement("a");
-            linkItalian.setAttribute("href", "it/index.html");
-            linkItalian.textContent = "Versione italiana";
-
-            var linkEnglish = document.createElement("a");
-            linkEnglish.setAttribute("href", "en/index.html");
-            linkEnglish.textContent = "English version";
-
-            messageContainer.appendChild(messageItalian);
-            messageContainer.appendChild(br.cloneNode());
-            messageContainer.appendChild(messageEnglish);
-            messageContainer.appendChild(br.cloneNode());
-            messageContainer.appendChild(linkItalian);
-            messageContainer.appendChild(document.createTextNode(" - "));
-            messageContainer.appendChild(linkEnglish);
-
-            document.body.appendChild(messageContainer);
-        }
-
-        </script>
+        
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
