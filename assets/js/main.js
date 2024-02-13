@@ -195,3 +195,24 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// document.getElementById('language').addEventListener('change', function() {
+//     var selectedLanguage = this.value;
+//     var contents = document.querySelectorAll('.content');
+    
+//     contents.forEach(function(content) {
+//         if (content.classList.contains(selectedLanguage)) {
+//             content.classList.add('active');
+//         } else {
+//             content.classList.remove('active');
+//         }
+//     });
+// });
+
+document.getElementById('language-toggle').addEventListener('click', function() {
+    var contents = document.querySelectorAll('.content');
+    
+    contents.forEach(function(content) {
+        content.classList.toggle('active');
+    });
+});

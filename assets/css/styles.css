@@ -187,7 +187,7 @@ img {
   align-items: center;
 }
 
-.nav__logo, .nav__toggle {
+.nav__logo, .nav__toggle, .nav__globe {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -196,9 +196,13 @@ img {
   color: var(--first-color)
 }
 
-.nav__toggle {
+.nav__toggle, .nav__globe {
   font-size: 1.1rem;
   cursor: pointer;
+}
+
+.nav__globe:hover {
+  color: var(--first-color);
 }
 
 .nav__toggle:hover {
